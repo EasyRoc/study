@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景颜色半透明</title>
+    <style>
+        /* 最后一个参数是alpha透明度，取值范围在0~1之间我们习惯把0.3的0省略掉，
+        写为background:rgba(0,0,03);注意:背景半透明是指盒子背景半透明，盒子里
+        面的内容不受影响CSS3新增属性，是IE9+版本浏览器才支持的 */
+        div {
+            width: 300px;
+            height: 300px;
+            background: rgba(0, 0, 0,0.6);
+        }
+    </style>
+</head>
+<body>
+    <div>sds</div>
+</body>
+</html>

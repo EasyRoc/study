@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器之链接伪类选择器</title>
+    <style>
+
+        /* 链接伪类选择器注意事项
+1.为了确保生效，请按照LVHA的循顺序声明:link - :visited - :hover - :active。
+因为a链接在浏览器中具有默认样式，所以我们实际工作中都需要给链接单独指定样式
+*/
+
+
+        /* 为访问过的连接 */
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+        /*2.a:visited 选择点击过的(访问过的)链接*/
+        a:visited {
+            color: orange;
+        }
+        /*a:hover 选择鼠标经过的那链接 */
+        a:hover {
+            color: skyblue;
+        }
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">安得广厦千万间</a><br>
+    <a href="#">使我不得开心颜</a><br>
+    <a href="#">千里冰封</a><br>
+    <a href="#">万里雪飘</a><br>
+</body>
+</html>
