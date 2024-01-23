@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行高继承</title>
+    <style>
+        body {
+            color: red;
+            /* 字体大小和行高 */
+            /* font: 12px/24px; */
+            font: 12px/1.5;
+        }
+        div {
+            /* 子元素继承了父元素body的行高1.5 */
+            /* 这个1.5就是当前元素文字大小的1.5倍 */
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div>嘿嘿嘿嘿黑</div>
+    <p>哈哈哈哈哈</p>
+</body>
+</html>
