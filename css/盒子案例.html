@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子案例-新浪导航</title>
+    <style>
+        div {
+            width: 600px;
+            height: 41px;
+            border-top: #ff8500 3px solid;
+            border-bottom: #edeef0 1px solid;
+            line-height: 41px;
+        }
+        /* 如何盒子本身没有指定width/height属性，则此时padding不会撑开盒子大小 */
+        a {
+            display: inline-block;
+            padding: 0 20px;
+            background-color: #fcfcfc;
+            text-decoration: none;
+            color: #4c4c4c;
+            line-height: 41px;
+        }
+        a:hover{
+            background-color: #eee;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#">设为首页</a>
+        <a href="#">手机新浪网</a>
+        <a href="#">移动客户端</a>
+        <a href="#">博客</a>
+        <a href="#">微博</a>
+        <a href="#">关注我</a>
+    </div>
+</body>
+</html>
